@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add and Remove Element</title>
+</head>
+
+<style>
+    .highlight{
+        background-color: yellow;
+        font-weight: bolder;
+    }
+</style>
+<body>
+    <p id="myParaGraph"> This is a ParaGraph</p>
+    <button onclick="addClass()">Add Class</button>
+    <button onclick="removeClass()">Remove Class</button>
+
+
+    <script>
+        function addClass(){
+            let paragraph = document.getElementById("myParaGraph");
+            paragraph.classList.add('highlight');
+        }
+
+        function removeClass(){
+            let paragraph = document.getElementById("myParaGraph");
+            paragraph.classList.remove('highlight');
+        }
+    </script>
+</body>
+</html>

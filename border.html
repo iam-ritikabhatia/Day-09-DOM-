@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a MouseOver Event listener</title>
+</head>
+
+<style>
+#myelement{
+    width: 200px;
+    height: 100px;
+    border: 2px solid rgb(206, 241, 2);
+    text-align: center;
+    line-height: 100px;
+    transition: border-color 1.9s ;
+
+}
+
+</style>
+<body>
+    <div id="myelement">Hover Me!</div>
+
+    <script>
+
+        let element = document.getElementById("myelement");
+
+        element.addEventListener('mouseover' , function(){
+        element.style.borderColor = "green"
+        });
+        element.addEventListener('mouseover' , function(){
+        element.style.borderColor = "red"
+        });
+    </script>
+</body>
+</html>
